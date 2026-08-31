@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "The Lost World: Jurassic Park Special Edition"
+id = "SLUS-00515"
+players = 1
+exe = "disc/SLUS_005.15"
+disc = ""
+load_address = "0x80010000"
+entry_pc = "0x80028490"
+text_size = "0x00088000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Lost World, The - Jurassic Park - Special Edition (USA) (Track 1).bin"
+cue_name = "Lost World, The - Jurassic Park - Special Edition (USA).cue"
+boot_exe = "SLUS_005.15"
+known_sizes = [264858720]
+known_md5 = [
+  "0ae119ea9f1c1a964277b1777d445771",
+]
+known_sha1 = [
+  "1fac6ab6b0d7d3d8f5e70b40bb9fae1d2a2287bc",
+]
+known_crc32 = [
+  "68a4e32c",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "the-lost-world-jurassic-park-special-edition- Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 3
+required_disc_fp = "4341e0d1a5ad7a935dffe21ba0427bc5deaf4a628cec93fb69bde3522de1f788"

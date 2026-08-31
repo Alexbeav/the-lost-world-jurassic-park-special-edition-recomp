@@ -1,0 +1,29 @@
+{
+  "cue_path": "Lost World, The - Jurassic Park - Special Edition (USA).cue",
+  "cue_name": "Lost World, The - Jurassic Park - Special Edition (USA).cue",
+  "bin_name": "Lost World, The - Jurassic Park - Special Edition (USA) (Track 1).bin",
+  "track_count": 3,
+  "data_track_size": 264858720,
+  "data_track_md5": "0ae119ea9f1c1a964277b1777d445771",
+  "data_track_sha1": "1fac6ab6b0d7d3d8f5e70b40bb9fae1d2a2287bc",
+  "data_track_crc32": "68a4e32c",
+  "boot_exe": "SLUS_005.15",
+  "serial": "SLUS-00515",
+  "serial_exe": "SLUS_005.15",
+  "volume_id": "LOST_WORLD_SE",
+  "display_name": "the-lost-world-jurassic-park-special-edition-",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80028490",
+  "text_size": "0x00088000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "4341e0d1a5ad7a935dffe21ba0427bc5deaf4a628cec93fb69bde3522de1f788",
+  "boot_exe_sha256": "95acf858b0282e903c04a520377299e6aa67d41d4e2508034309df15cfa9d927",
+  "seed_count": 389,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
